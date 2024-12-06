@@ -1,0 +1,170 @@
+Machine Name: {w|w has the same number of 0's and 1's} Deterministic
+Initial String: 0011
+String accepted in 15
+Number of Transitions Simulated: 15
+Average Nondeterminism: 1.00
+Tree:
+[['', 'q0', '0011']]
+[['_', 'q1', '011']]
+[['_0', 'q1', '11']]
+[['_', 'q3', '0x1']]
+[['', 'q3', '_0x1']]
+[['_', 'q4', '0x1']]
+[['_x', 'q1', 'x1']]
+[['_xx', 'q1', '1']]
+[['_x', 'q3', 'xx']]
+[['_', 'q3', 'xxx']]
+[['', 'q3', '_xxx']]
+[['_', 'q4', 'xxx']]
+[['_x', 'q4', 'xx']]
+[['_xx', 'q4', 'x']]
+[['_xxx', 'q4', '_']]
+[['_xxx_', 'qacc', '_']]
+
+Machine Name: {w | w has the same number of 0's and 1's} Nondeterministic
+Initial String: 0011
+String accepted in 15
+Number of Transitions Simulated: 22
+Average Nondeterminism: 1.47
+Tree:
+[['', 'q0', '0011']]
+[['_', 'q1', '011']]
+[['_0', 'q1', '11']]
+[['_', 'q3', '0x1']]
+[['', 'q3', '_0x1']]
+[['_', 'q4', '0x1'], ['_', 'q5', '0x1']]
+[['_x', 'q1', 'x1'], ['_', 'qrej', '0x1']]
+[['_xx', 'q1', '1']]
+[['_x', 'q3', 'xx']]
+[['_', 'q3', 'xxx']]
+[['', 'q3', '_xxx']]
+[['_', 'q4', 'xxx'], ['_', 'q5', 'xxx']]
+[['_x', 'q4', 'xx'], ['_x', 'q5', 'xx']]
+[['_xx', 'q4', 'x'], ['_xx', 'q5', 'x']]
+[['_xxx', 'q4', '_'], ['_xxx', 'q5', '_']]
+[['_xx', 'q3', 'x_'], ['_xxx_', 'qacc', '_']]
+
+Machine Name: {w | w has the same number of 0's and 1's} Nondeterministic
+Initial String: 000111
+String accepted in 31
+Number of Transitions Simulated: 43
+Average Nondeterminism: 1.39
+Tree:
+[['', 'q0', '000111']]
+[['_', 'q1', '00111']]
+[['_0', 'q1', '0111']]
+[['_00', 'q1', '111']]
+[['_0', 'q3', '0x11']]
+[['_', 'q3', '00x11']]
+[['', 'q3', '_00x11']]
+[['_', 'q4', '00x11'], ['_', 'q5', '00x11']]
+[['_x', 'q1', '0x11'], ['_', 'qrej', '00x11']]
+[['_x0', 'q1', 'x11']]
+[['_x0x', 'q1', '11']]
+[['_x0', 'q3', 'xx1']]
+[['_x', 'q3', '0xx1']]
+[['_', 'q3', 'x0xx1']]
+[['', 'q3', '_x0xx1']]
+[['_', 'q4', 'x0xx1'], ['_', 'q5', 'x0xx1']]
+[['_x', 'q4', '0xx1'], ['_x', 'q5', '0xx1']]
+[['_xx', 'q1', 'xx1'], ['_x', 'qrej', '0xx1']]
+[['_xxx', 'q1', 'x1']]
+[['_xxxx', 'q1', '1']]
+[['_xxx', 'q3', 'xx']]
+[['_xx', 'q3', 'xxx']]
+[['_x', 'q3', 'xxxx']]
+[['_', 'q3', 'xxxxx']]
+[['', 'q3', '_xxxxx']]
+[['_', 'q4', 'xxxxx'], ['_', 'q5', 'xxxxx']]
+[['_x', 'q4', 'xxxx'], ['_x', 'q5', 'xxxx']]
+[['_xx', 'q4', 'xxx'], ['_xx', 'q5', 'xxx']]
+[['_xxx', 'q4', 'xx'], ['_xxx', 'q5', 'xx']]
+[['_xxxx', 'q4', 'x'], ['_xxxx', 'q5', 'x']]
+[['_xxxxx', 'q4', '_'], ['_xxxxx', 'q5', '_']]
+[['_xxxx', 'q3', 'x_'], ['_xxxxx_', 'qacc', '_']]
+
+Machine Name: a plus DTM
+Initial String: aaa
+String accepted in 4
+Number of Transitions Simulated: 4
+Average Nondeterminism: 1.00
+Tree:
+[['', 'q1', 'aaa']]
+[['a', 'q1', 'aa']]
+[['aa', 'q1', 'a']]
+[['aaa', 'q1', '_']]
+[['aaaa', 'q2', '_']]
+
+Machine Name: a plus
+Initial String: aaa
+String accepted in 4
+Number of Transitions Simulated: 10
+Average Nondeterminism: 2.50
+Tree:
+[['', 'q1', 'aaa']]
+[['a', 'q1', 'aa'], ['a', 'q2', 'aa']]
+[['aa', 'q1', 'a'], ['aa', 'q2', 'a'], ['aa', 'qrej', 'a']]
+[['aaa', 'q1', '_'], ['aaa', 'q2', '_'], ['aaa', 'qrej', '_']]
+[['aaa_', 'qrej', '_'], ['aa', 'qacc', 'a_']]
+
+Machine Name: a plus
+Initial String: aaaaa
+String accepted in 6
+Number of Transitions Simulated: 16
+Average Nondeterminism: 2.67
+Tree:
+[['', 'q1', 'aaaaa']]
+[['a', 'q1', 'aaaa'], ['a', 'q2', 'aaaa']]
+[['aa', 'q1', 'aaa'], ['aa', 'q2', 'aaa'], ['aa', 'qrej', 'aaa']]
+[['aaa', 'q1', 'aa'], ['aaa', 'q2', 'aa'], ['aaa', 'qrej', 'aa']]
+[['aaaa', 'q1', 'a'], ['aaaa', 'q2', 'a'], ['aaaa', 'qrej', 'a']]
+[['aaaaa', 'q1', '_'], ['aaaaa', 'q2', '_'], ['aaaaa', 'qrej', '_']]
+[['aaaaa_', 'qrej', '_'], ['aaaa', 'qacc', 'a_']]
+
+Machine Name: a*b*c* deterministic
+Initial String: aabccc
+String accepted in 7
+Number of Transitions Simulated: 7
+Average Nondeterminism: 1.00
+Tree:
+[['', 'q0', 'aabccc']]
+[['a', 'q1', 'abccc']]
+[['aa', 'q1', 'bccc']]
+[['aab', 'q2', 'ccc']]
+[['aabc', 'q3', 'cc']]
+[['aabcc', 'q3', 'c']]
+[['aabccc', 'q3', '_']]
+[['aabccc_', 'qacc', '_']]
+
+Machine Name: a*b*c* Nondeterministic
+Initial String: aabccc
+String accepted in 7
+Number of Transitions Simulated: 31
+Average Nondeterminism: 4.43
+Tree:
+[['', 'q0', 'aabccc']]
+[['a', 'q0', 'abccc'], ['a', 'q1', 'abccc'], ['a', 'q2', 'abccc'], ['a', 'q3', 'abccc']]
+[['aa', 'q0', 'bccc'], ['aa', 'q1', 'bccc'], ['aa', 'q2', 'bccc'], ['aa', 'q3', 'bccc'], ['a', 'qrej', 'abccc']]
+[['aab', 'q1', 'ccc'], ['aab', 'q2', 'ccc'], ['aab', 'q3', 'ccc'], ['aa', 'qrej', 'bccc']]
+[['aab', 'qrej', 'ccc'], ['aabc', 'q2', 'cc'], ['aabc', 'q3', 'cc']]
+[['aabcc', 'q2', 'c'], ['aabcc', 'q3', 'c'], ['aabc', 'qrej', 'cc']]
+[['aabccc', 'q2', '_'], ['aabccc', 'q3', '_'], ['aabcc', 'qrej', 'c']]
+[['aabccc', 'qrej', '_'], ['aabccc_', 'qacc', '_']]
+
+Machine Name: a*b*c* Nondeterministic
+Initial String: aaabbcccc
+String accepted in 10
+Number of Transitions Simulated: 46
+Average Nondeterminism: 4.60
+Tree:
+[['', 'q0', 'aaabbcccc']]
+[['a', 'q0', 'aabbcccc'], ['a', 'q1', 'aabbcccc'], ['a', 'q2', 'aabbcccc'], ['a', 'q3', 'aabbcccc']]
+[['aa', 'q0', 'abbcccc'], ['aa', 'q1', 'abbcccc'], ['aa', 'q2', 'abbcccc'], ['aa', 'q3', 'abbcccc'], ['a', 'qrej', 'aabbcccc']]
+[['aaa', 'q0', 'bbcccc'], ['aaa', 'q1', 'bbcccc'], ['aaa', 'q2', 'bbcccc'], ['aaa', 'q3', 'bbcccc'], ['aa', 'qrej', 'abbcccc']]
+[['aaab', 'q1', 'bcccc'], ['aaab', 'q2', 'bcccc'], ['aaab', 'q3', 'bcccc'], ['aaa', 'qrej', 'bbcccc']]
+[['aaabb', 'q1', 'cccc'], ['aaabb', 'q2', 'cccc'], ['aaabb', 'q3', 'cccc'], ['aaab', 'qrej', 'bcccc']]
+[['aaabb', 'qrej', 'cccc'], ['aaabbc', 'q2', 'ccc'], ['aaabbc', 'q3', 'ccc']]
+[['aaabbcc', 'q2', 'cc'], ['aaabbcc', 'q3', 'cc'], ['aaabbc', 'qrej', 'ccc']]
+[['aaabbccc', 'q2', 'c'], ['aaabbccc', 'q3', 'c'], ['aaabbcc', 'qrej', 'cc']]
+[['aaabbcccc', 'q2', '_'], ['aaabbcccc', 'q3', '_'], ['aaabbccc', 'qrej', 'c']]
+[['aaabbcccc', 'qrej', '_'], ['aaabbcccc_', 'qacc', '_']]
